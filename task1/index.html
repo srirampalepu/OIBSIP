@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<title>Calculator</title>
+</head>
+<body>
+	<header>calculator</header>
+	<div class="outer">
+	<div id="calculator">
+		<div id="output"></div>
+		<table>
+			<tr>
+				<td onclick="appendToOutput('7')">7</td>
+				<td onclick="appendToOutput('8')">8</td>
+				<td onclick="appendToOutput('9')">9</td>
+				<td onclick="appendToOutput('/')">/</td>
+			</tr>
+			<tr>
+				<td onclick="appendToOutput('4')">4</td>
+				<td onclick="appendToOutput('5')">5</td>
+				<td onclick="appendToOutput('6')">6</td>
+				<td onclick="appendToOutput('*')">*</td>
+			</tr>
+			<tr>
+				<td onclick="appendToOutput('1')">1</td>
+				<td onclick="appendToOutput('2')">2</td>
+				<td onclick="appendToOutput('3')">3</td>
+				<td onclick="appendToOutput('-')">-</td>
+			</tr>
+			<tr>
+				<td onclick="appendToOutput('0')">0</td>
+				<td onclick="appendToOutput('.')">.</td>
+				<td id="clear" onclick="clearOutput()">C</td>
+				<td onclick="appendToOutput('+')">+</td>
+			</tr>
+			<tr>
+				<td colspan="2"></td>
+				<td onclick="deleteLast()">←</td>
+				<td id="equals" onclick="calculate()">=</td>
+			</tr>
+		</table>
+	</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
